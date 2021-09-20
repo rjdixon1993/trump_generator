@@ -52,7 +52,6 @@ h1 {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "image1 image1";
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
@@ -86,7 +85,79 @@ img {
   display: block;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+  .grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .check {
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      margin-left: 0;
+      margin-bottom: 1em;
+  }
+
+  .guess {
+    height: auto;
+    padding: 10px 10px;
+    font-size: 12px;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+  .quote {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 11;
+    color: white(0, 0, 0);
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.07);
+    margin: 0 auto;
+
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    
+  position: absolute;
+  top: 50%;
+  transform: translate(0, 50%);
+
+}
+    .image {
+      grid-area: image1;
+
+    }
+    
+
+  
+}
+
+
+
+
+/* @media only screen and (max-width: 600px) {
+  .grid_container {
+    display: grid;
+
+    grid-template-areas:
+      "text"
+      "image1";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
   .check {
     padding: 10px 10px;
     text-align: center;
@@ -107,12 +178,22 @@ img {
   .quote {
     font-family: "Roboto", sans-serif;
     font-weight: 200;
-    font-size: 8;
-    color: whitesmoke;
+    font-size: 12;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     background-color: rgba(0, 0, 0, 0.07);
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-  }
+    grid-area: text;
+    margin: 0 auto;
+    height: auto;
+    
 }
+    .image {
+      grid-area: image1;
+
+    }
+    
+
+  
+} */
+
+/* If screen size is small then we need to change it so the text is above / below the image, not this way round soirt out grid...*
