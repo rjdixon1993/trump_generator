@@ -85,3 +85,34 @@ img {
   max-width: 100%;
   display: block;
 }
+
+@media only screen and (max-width: 600px) {
+  .check {
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 1em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+
+  .guess {
+    margin-right: 1em;
+    height: auto;
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+
+  .quote {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 8;
+    color: whitesmoke;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.07);
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
