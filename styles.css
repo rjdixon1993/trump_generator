@@ -31,7 +31,7 @@ h1 {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-left: 2em;
+  margin-left: 1em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
@@ -42,7 +42,7 @@ h1 {
 }
 
 .guess {
-  margin-right: 2em;
+  margin-right: 1em;
   height: auto;
   padding: 15px 32px;
   font-size: 16px;
@@ -98,20 +98,23 @@ img {
   .check {
     padding: 10px 10px;
     text-align: center;
-    display: inline-block;
-    font-size: 12px;
+    display: block;
+    font-size: 14px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
       rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-      margin-left: 0;
-      margin-bottom: 1em;
+      
+      margin: 1em auto 0 auto;
+
   }
 
   .guess {
     height: auto;
     padding: 10px 10px;
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 0;
     margin-bottom: 1em;
+
+    margin: 0 auto 0 auto;
   }
 
   .quote {
@@ -127,9 +130,9 @@ img {
     grid-row-start: 1;
     grid-row-end: 1;
     
-  position: absolute;
-  top: 50%;
-  transform: translate(0, 10%);
+    position: absolute;
+    top: 50%;
+    transform: translate(0, 10%);
 
 }
     .image {
